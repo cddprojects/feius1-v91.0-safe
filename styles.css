@@ -261,6 +261,18 @@ img, svg {
   border-radius: 16px 16px 0 0;
 }
 
+.card-photo-end {
+  margin: 0.15rem -1.15rem -0.85rem;
+}
+
+.card-photo-end img {
+  width: 100%;
+  height: 12.5rem;
+  object-fit: cover;
+  object-position: 62% 42%;
+  border-radius: 0 0 16px 16px;
+}
+
 .checklist-photo {
   margin-top: 0.2rem;
 }
