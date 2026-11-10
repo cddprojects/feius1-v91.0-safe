@@ -762,14 +762,10 @@ h1 {
 }
 
 .local {
-  width: 100vw;
   margin-top: 1.75rem;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
-  padding: 1.45rem max(1.25rem, calc((100vw - 1120px) / 2)) 1.2rem;
+  padding: 1.25rem 1.25rem 1.05rem;
   background: var(--sage);
-  border-radius: 0;
-  border-top: none;
+  border-radius: 16px;
 }
 
 .local p,
@@ -1005,10 +1001,6 @@ textarea {
 @media (max-width: 640px) {
   .wrap {
     width: min(1120px, calc(100% - 2rem));
-  }
-
-  .local {
-    padding-inline: 1rem;
   }
 
   .header-inner {
