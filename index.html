@@ -9,7 +9,7 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -38,66 +38,49 @@
         <a href="#updates" data-nav="updates">U.S. updates</a>
         <a href="#feedback" data-nav="feedback">Feedback</a>
       </nav>
+      <a class="nav-cta" href="#checklist">Get the checklist</a>
     </div>
   </header>
 
   <main id="main">
-    <div class="sheet">
-      <header class="sheet-head">
-        <p class="eyebrow">Job hunting in the U.S.</p>
-        <h1 id="page-title">Before you hit Apply</h1>
-        <p class="lede">Found a job you like? Take a minute to make sure the work opportunity is real and the pay, hours, and location work for you.</p>
-        <p class="sheet-links">
-          <a href="#checklist">Get the checklist</a>
-          <a href="#market">See where jobs are growing</a>
-        </p>
-        <p class="checked-on">Sources checked November 10, 2026</p>
-        <figure class="plate plate-intro">
+    <div class="page">
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="chip">Job hunting in the U.S.</p>
+          <h1 id="page-title">Before you hit <em>Apply</em></h1>
+          <p class="lede">Found a job you like? Take a minute to make sure the work opportunity is real and the pay, hours, and location work for you.</p>
+          <p class="hero-actions">
+            <a class="button" href="#checklist">Get the checklist</a>
+            <a class="button button-ghost" href="#market">See where jobs are growing</a>
+          </p>
+          <p class="checked-on">Sources checked November 10, 2026</p>
+        </div>
+        <figure class="hero-photo">
           <img src="images/pause-before-apply.jpg" width="1280" height="720" alt="A woman at her kitchen table pauses in front of a laptop before applying for a job.">
         </figure>
-      </header>
+      </section>
 
-      <nav class="rail" aria-label="Four things to check">
-        <p class="check-panel-label">Four things to check</p>
-        <ol class="check-jumps">
-          <li>
-            <a href="#posting" data-section-link="posting">
-              <span class="num">01</span>
-              <span>Is this job posting real?</span>
-            </a>
-          </li>
-          <li>
-            <a href="#pay" data-section-link="pay">
-              <span class="num">02</span>
-              <span>What does it pay?</span>
-            </a>
-          </li>
-          <li>
-            <a href="#hours" data-section-link="hours">
-              <span class="num">03</span>
-              <span>What hours would I work?</span>
-            </a>
-          </li>
-          <li>
-            <a href="#location" data-section-link="location">
-              <span class="num">04</span>
-              <span>Where would I work?</span>
-            </a>
-          </li>
+      <nav class="quick" aria-label="Four things to check">
+        <p class="quick-label">Four things to check</p>
+        <ol class="quick-list">
+          <li><a href="#posting" data-section-link="posting"><span class="num">01</span><span>Is this job posting real?</span></a></li>
+          <li><a href="#pay" data-section-link="pay"><span class="num">02</span><span>What does it pay?</span></a></li>
+          <li><a href="#hours" data-section-link="hours"><span class="num">03</span><span>What hours would I work?</span></a></li>
+          <li><a href="#location" data-section-link="location"><span class="num">04</span><span>Where would I work?</span></a></li>
         </ol>
       </nav>
 
       <div class="sheet-main">
         <section class="section" id="checklist" data-section="checklist">
-          <p class="eyebrow">The checklist</p>
+          <p class="chip">The checklist</p>
           <h2>Give the posting a closer look</h2>
           <p class="section-lede">Keep the listing open as you go. If something’s missing, here’s what to ask.</p>
-          <figure class="wide-photo checklist-photo">
-            <img src="images/reading-a-posting.jpg" width="1152" height="864" alt="A man in a library reads a job posting on his phone.">
-          </figure>
           <div class="check-grid">
+            <figure class="check-photo">
+              <img src="images/reading-a-posting.jpg" width="1152" height="864" alt="A man in a library reads a job posting on his phone.">
+            </figure>
 
-          <article class="entry" id="posting" data-section="posting">
+          <article class="entry card" id="posting" data-section="posting">
             <p class="step"><span>01</span> The posting</p>
             <h3>Is this job posting real?</h3>
             <p>Go to the company’s careers page and look for the same job title, location, and job ID if there is one. If you don’t see the opening, contact the company using the number or email on its website.</p>
@@ -112,7 +95,7 @@
             </ul>
           </article>
 
-          <article class="entry" id="pay" data-section="pay">
+          <article class="entry card" id="pay" data-section="pay">
             <p class="step"><span>02</span> The pay</p>
             <h3>What does it pay?</h3>
             <p>Look for an hourly rate, a salary range, or a flat fee for the project. If the ad says “up to $25 an hour,” ask how much is base pay and how much depends on tips, commissions, or bonuses.</p>
@@ -127,7 +110,7 @@
             </ul>
           </article>
 
-          <article class="entry" id="hours" data-section="hours">
+          <article class="entry card" id="hours" data-section="hours">
             <figure class="card-photo">
               <img src="images/shift-start.jpg" width="1152" height="864" alt="A man checks a laptop and phone at his kitchen table.">
             </figure>
@@ -140,7 +123,7 @@
             </blockquote>
           </article>
 
-          <article class="entry" id="location" data-section="location">
+          <article class="entry card" id="location" data-section="location">
             <p class="step"><span>04</span> The location</p>
             <h3>Where would I work?</h3>
             <p>For on-site or hybrid jobs, get the exact address and ask how often you’ll need to go in. For remote jobs and online jobs, check whether the company hires in your state and whether you’ll need to show up in person for training or meetings.</p>
@@ -155,10 +138,10 @@
           </div>
         </section>
 
-        <section class="section" id="market" data-section="market">
+        <section class="section band" id="market" data-section="market">
           <div class="market-open">
             <div class="market-lead">
-              <p class="eyebrow">U.S. job market · November 2026</p>
+              <p class="chip">U.S. job market · November 2026</p>
               <h2>October was a stronger month for jobs</h2>
               <p class="section-lede">U.S. employers added <strong>165,000</strong> jobs to their payrolls in October, well above the monthly average of <strong>48,000</strong> over the previous year. The unemployment rate was little changed at <strong>4.1%</strong>.</p>
               <p class="source-link"><a href="https://www.bls.gov/news.release/empsit.nr0.htm" target="_blank" rel="noopener noreferrer">October jobs report from the Bureau of Labor Statistics<span class="visually-hidden"> (opens in a new tab)</span></a></p>
@@ -219,11 +202,11 @@
         </section>
 
         <section class="section" id="updates" data-section="updates">
-          <p class="eyebrow">U.S. job search updates</p>
+          <p class="chip">U.S. job search updates</p>
           <h2>New rules and scam alerts</h2>
           <p class="section-lede">Check the date and the place on each note below before you compare a job posting or an offer.</p>
 
-          <article class="rule">
+          <article class="rule card">
             <div class="rule-meta">
               <p class="place">California and Washington</p>
               <p class="when">Starts January 1, 2027</p>
@@ -238,7 +221,7 @@
             </div>
           </article>
 
-          <article class="rule">
+          <article class="rule card">
             <div class="rule-meta">
               <p class="place">Maine and Virginia</p>
               <p class="when">In effect since July 2026</p>
@@ -254,7 +237,7 @@
             </div>
           </article>
 
-          <article class="rule">
+          <article class="rule card">
             <div class="rule-meta">
               <p class="place">Chicago, Illinois</p>
               <p class="when">In effect since July 1, 2026</p>
@@ -269,7 +252,7 @@
             </div>
           </article>
 
-          <article class="rule">
+          <article class="rule card">
             <div class="rule-meta">
               <p class="place">Nationwide</p>
               <p class="when">FTC alert · April 2026</p>
@@ -288,7 +271,7 @@
 
         <section class="section feedback" id="feedback" data-section="feedback">
           <div class="feedback-copy">
-            <p class="eyebrow">From our readers</p>
+            <p class="chip">From our readers</p>
             <h2>What should we cover next?</h2>
             <p class="section-lede">Have a job search question or a topic you’d like us to cover? Tell us what you’d like to see.</p>
           </div>
