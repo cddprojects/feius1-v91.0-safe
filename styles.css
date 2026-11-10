@@ -172,9 +172,8 @@ img, svg {
 }
 
 .hero {
-  padding: 2.4rem 0 2.8rem;
-  background:
-    linear-gradient(180deg, #e5eee3 0%, var(--paper) 100%);
+  padding: 2.6rem 0 1.5rem;
+  background: var(--paper);
 }
 
 .hero-grid {
@@ -196,12 +195,12 @@ img, svg {
   width: 100%;
   height: auto;
   object-fit: cover;
-  border-radius: 18px;
+  border-radius: 0;
 }
 
 .hero-photo img {
-  height: 12rem;
-  object-position: 50% 30%;
+  height: 16rem;
+  object-position: 42% 28%;
 }
 
 .section-photo img {
@@ -232,14 +231,14 @@ img, svg {
 }
 
 .check-grid .entry {
-  display: flex;
-  flex-direction: column;
+  display: block;
   max-width: none;
   margin: 0;
-  padding: 1.15rem 1.15rem 0.85rem;
-  border: 1px solid var(--line);
-  border-radius: 16px;
-  background: var(--paper-2);
+  padding: 1.8rem 0 0.4rem;
+  border: 0;
+  border-top: 1px solid var(--ink);
+  border-radius: 0;
+  background: none;
 }
 
 .check-grid .entry:first-of-type {
@@ -251,34 +250,19 @@ img, svg {
   max-width: none;
 }
 
-.card-photo {
-  margin: -1.15rem -1.15rem 1rem;
-}
-
-.card-photo img {
-  width: 100%;
-  height: 13rem;
-  object-fit: cover;
-  object-position: 42% 32%;
-  border-radius: 16px 16px 0 0;
-}
-
+.card-photo,
 .card-photo-end {
-  position: relative;
-  flex: 1 1 auto;
-  min-height: 12.5rem;
-  margin: 0.15rem -1.15rem -0.85rem;
-  overflow: hidden;
-  border-radius: 0 0 15px 15px;
+  margin: 0 0 1.1rem;
 }
 
+.card-photo img,
 .card-photo-end img {
-  position: absolute;
-  inset: 0;
+  position: static;
   width: 100%;
-  height: 100%;
+  height: 18rem;
   object-fit: cover;
-  object-position: 48% 40%;
+  object-position: 50% 32%;
+  border-radius: 0;
 }
 
 .checklist-photo {
@@ -292,12 +276,12 @@ img, svg {
 }
 
 .eyebrow {
-  margin: 0 0 0.7rem;
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--forest);
+  margin: 0 0 0.55rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: none;
+  color: var(--muted);
 }
 
 h1 {
@@ -320,60 +304,63 @@ h1 {
 }
 
 .check-panel {
-  background: var(--forest);
-  color: var(--cream);
-  border-radius: 18px;
-  padding: 1.05rem 1rem 0.55rem;
-  box-shadow: var(--shadow);
+  background: none;
+  color: inherit;
+  border-radius: 0;
+  padding: 0.15rem 0 0;
+  box-shadow: none;
 }
 
 .check-panel-label {
-  margin: 0 0.35rem 0.7rem;
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: #d7e6cf;
+  margin: 0 0 0.35rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: none;
+  color: var(--muted);
 }
 
 .check-jumps {
   list-style: none;
   margin: 0;
   padding: 0;
+  border-top: 1px solid var(--ink);
 }
 
 .check-jumps a {
   display: flex;
-  align-items: center;
-  gap: 0.8rem;
-  min-height: 3.15rem;
-  margin-bottom: 0.5rem;
-  padding: 0.55rem 0.75rem;
-  border: 1px solid rgba(244, 247, 242, 0.22);
-  border-radius: 12px;
-  color: var(--cream);
+  align-items: baseline;
+  gap: 0.85rem;
+  min-height: 0;
+  margin: 0;
+  padding: 0.72rem 0;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  border-radius: 0;
+  color: var(--forest-deep);
   text-decoration: none;
-  font-weight: 650;
-  font-size: 1.05rem;
-  line-height: 1.25;
+  font-weight: 600;
+  font-size: 1.08rem;
+  line-height: 1.3;
 }
 
 .check-jumps a:hover {
-  background: rgba(255, 255, 255, 0.06);
+  background: none;
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
 }
 
 .check-jumps .num {
   flex: none;
-  width: 1.9rem;
-  height: 1.9rem;
-  display: grid;
-  place-items: center;
-  border-radius: 999px;
-  background: #f3ead2;
-  color: var(--forest-deep);
+  width: 1.6rem;
+  height: auto;
+  display: inline;
+  border-radius: 0;
+  background: none;
+  color: var(--brass);
   font-family: Fraunces, Georgia, serif;
-  font-size: 0.85rem;
-  font-weight: 600;
+  font-size: 0.95rem;
+  font-weight: 560;
 }
 
 .actions {
@@ -391,7 +378,7 @@ h1 {
   min-height: 2.9rem;
   padding: 0.55rem 1.1rem;
   border: 0;
-  border-radius: 999px;
+  border-radius: 0;
   background: var(--forest);
   color: var(--cream);
   font: 700 1rem/1 "Source Sans 3", sans-serif;
@@ -545,10 +532,10 @@ h1 {
 
 .ask {
   margin: 1.15rem 0 1.2rem;
-  padding: 0.9rem 1rem 0.95rem 1.05rem;
-  background: var(--sage);
-  border-left: 3px solid var(--brass);
-  border-radius: 0 12px 12px 0;
+  padding: 0.1rem 0 0.1rem 1rem;
+  background: none;
+  border-left: 2px solid var(--forest);
+  border-radius: 0;
 }
 
 .ask-label {
@@ -624,10 +611,10 @@ h1 {
 
 .market-photo img {
   width: 100%;
-  height: 12rem;
+  height: 18rem;
   object-fit: cover;
-  object-position: 48% 32%;
-  border-radius: 16px;
+  object-position: 46% 30%;
+  border-radius: 0;
 }
 
 .market-lead .section-lede {
@@ -645,11 +632,12 @@ h1 {
 }
 
 .gains {
-  margin-top: 1.75rem;
-  padding: 1.2rem 1.15rem 0.35rem;
-  background: var(--paper-2);
-  border: 1px solid var(--line);
-  border-radius: 16px;
+  margin-top: 2.4rem;
+  padding: 1.6rem 0 0;
+  background: none;
+  border: 0;
+  border-top: 1px solid var(--ink);
+  border-radius: 0;
 }
 
 .market-notes {
@@ -762,10 +750,11 @@ h1 {
 }
 
 .local {
-  margin-top: 1.75rem;
-  padding: 1.25rem 1.25rem 1.05rem;
-  background: var(--sage);
-  border-radius: 16px;
+  margin-top: 2.2rem;
+  padding: 1.35rem 0 0.2rem;
+  background: none;
+  border-radius: 0;
+  border-top: 1px solid var(--ink);
 }
 
 .local p,
@@ -815,10 +804,11 @@ h1 {
 }
 
 .note-form {
-  background: var(--paper-2);
-  border: 1px solid var(--line);
-  border-radius: 16px;
-  padding: 1.15rem 1.05rem 1.2rem;
+  background: none;
+  border: 0;
+  border-top: 1px solid var(--ink);
+  border-radius: 0;
+  padding: 1.15rem 0 0;
 }
 
 .field {
@@ -837,9 +827,10 @@ input,
 select,
 textarea {
   width: 100%;
-  border: 1px solid #c5d0c6;
-  border-radius: 10px;
-  background: #fff;
+  border: 0;
+  border-bottom: 1px solid var(--ink);
+  border-radius: 0;
+  background: transparent;
   color: var(--ink);
   font: 400 1.05rem/1.4 "Source Sans 3", sans-serif;
   padding: 0.7rem 0.75rem;
@@ -864,8 +855,8 @@ textarea {
 }
 
 .site-footer {
-  background: #e3ece1;
-  border-top: 1px solid var(--line);
+  background: var(--paper);
+  border-top: 1px solid var(--ink);
   padding: 1.8rem 0 1.6rem;
 }
 
@@ -910,11 +901,11 @@ textarea {
   outline-offset: 3px;
 }
 
-@media (min-width: 800px) {
-  .check-grid {
+@media (min-width: 800px) and (max-width: 959px) {
+  .check-jumps {
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1.25rem 1.35rem;
-    align-items: stretch;
+    column-gap: 2rem;
   }
 }
 
@@ -946,24 +937,25 @@ textarea {
   }
 
   .hero-grid {
-    grid-template-columns: minmax(0, 1.15fr) minmax(20rem, 0.85fr);
+    grid-template-columns: minmax(0, 1.3fr) minmax(16rem, 0.8fr);
     grid-template-areas:
-      "photo copy"
-      "photo checks"
-      "photo actions";
-    column-gap: 2.75rem;
-    row-gap: 1.15rem;
-    align-items: stretch;
+      "copy checks"
+      "photo photo"
+      "actions actions";
+    column-gap: 3rem;
+    row-gap: 1.35rem;
+    align-items: start;
   }
 
   .hero-photo { grid-area: photo; }
   .hero-photo img {
-    height: 100%;
-    min-height: 32rem;
+    height: 22rem;
+    min-height: 0;
+    object-position: 40% 30%;
   }
   .hero-copy { grid-area: copy; }
-  .check-panel { grid-area: checks; }
-  .hero-actions { grid-area: actions; align-self: end; }
+  .check-panel { grid-area: checks; padding-top: 0.35rem; }
+  .hero-actions { grid-area: actions; }
 
   .section {
     padding-top: 4.4rem;
@@ -983,14 +975,9 @@ textarea {
 }
 
 @media (min-width: 720px) {
-  .market-open {
-    grid-template-columns: minmax(0, 1.25fr) minmax(13rem, 17rem);
-    gap: 1.25rem 1.75rem;
-  }
-
   .market-photo img {
-    height: 15.5rem;
-    object-position: 46% 34%;
+    height: 20rem;
+    object-position: 46% 32%;
   }
 
   .market-notes > h3 {
