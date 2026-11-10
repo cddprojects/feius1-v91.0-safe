@@ -50,6 +50,10 @@
           <p class="lede">Found a job you like? Take a minute to make sure the listing is real and the pay, hours, and location work for you.</p>
         </div>
 
+        <figure class="hero-photo">
+          <img src="images/pause-before-apply.jpg" width="1280" height="720" alt="A woman at her kitchen table pauses in front of a laptop before applying for a job.">
+        </figure>
+
         <div class="check-panel">
           <p class="check-panel-label">Four things to check</p>
           <ol class="check-jumps">
@@ -90,27 +94,18 @@
       </div>
     </section>
 
-    <div class="wrap layout">
-      <nav class="rail" aria-label="On this page">
-        <p class="rail-label">On this page</p>
-        <ol class="rail-list">
-          <li><a href="#posting" data-section-link="posting">Is this job posting real?</a></li>
-          <li><a href="#pay" data-section-link="pay">What does it pay?</a></li>
-          <li><a href="#hours" data-section-link="hours">What hours would I work?</a></li>
-          <li><a href="#location" data-section-link="location">Where would I work?</a></li>
-        </ol>
-        <ul class="rail-list rail-more">
-          <li><a href="#market" data-section-link="market">Job market</a></li>
-          <li><a href="#updates" data-section-link="updates">U.S. updates</a></li>
-          <li><a href="#feedback" data-section-link="feedback">Feedback</a></li>
-        </ul>
-      </nav>
-
-      <div class="content">
+    <div class="wrap content">
         <section class="section" id="checklist" data-section="checklist">
-          <p class="eyebrow">The checklist</p>
-          <h2>Give the posting a closer look</h2>
-          <p class="section-lede">Keep the listing open as you go. If something’s missing, here’s what to ask.</p>
+          <div class="section-open">
+            <div>
+              <p class="eyebrow">The checklist</p>
+              <h2>Give the posting a closer look</h2>
+              <p class="section-lede">Keep the listing open as you go. If something’s missing, here’s what to ask.</p>
+            </div>
+            <figure class="section-photo">
+              <img src="images/reading-a-posting.jpg" width="1152" height="864" alt="A man in a library reads a job posting on his phone.">
+            </figure>
+          </div>
 
           <article class="entry" id="posting" data-section="posting">
             <p class="step"><span>01</span> The posting</p>
@@ -142,14 +137,19 @@
             </ul>
           </article>
 
-          <article class="entry" id="hours" data-section="hours">
-            <p class="step"><span>03</span> The hours</p>
-            <h3>What hours would I work?</h3>
-            <p>Get the days, shift times, and usual hours per week. “Flexible schedule” could mean you pick up shifts or that your manager needs you to cover different ones each week. Check when training happens and confirm the time zone if you’ll work remotely.</p>
-            <blockquote class="ask">
-              <p class="ask-label">What to ask</p>
-              <p>“What would a typical week look like? When would I need to be available for training?”</p>
-            </blockquote>
+          <article class="entry entry-split" id="hours" data-section="hours">
+            <div>
+              <p class="step"><span>03</span> The hours</p>
+              <h3>What hours would I work?</h3>
+              <p>Get the days, shift times, and usual hours per week. “Flexible schedule” could mean you pick up shifts or that your manager needs you to cover different ones each week. Check when training happens and confirm the time zone if you’ll work remotely.</p>
+              <blockquote class="ask">
+                <p class="ask-label">What to ask</p>
+                <p>“What would a typical week look like? When would I need to be available for training?”</p>
+              </blockquote>
+            </div>
+            <figure class="portrait">
+              <img src="images/shift-start.jpg" width="864" height="1152" alt="A restaurant worker ties her apron at the start of a shift.">
+            </figure>
           </article>
 
           <article class="entry" id="location" data-section="location">
@@ -164,6 +164,9 @@
         </section>
 
         <section class="section" id="market" data-section="market">
+          <figure class="wide-photo">
+            <img src="images/neighborhood-jobs.jpg" width="735" height="669" alt="A neighborhood street with a diner, a small clinic, and a courier van.">
+          </figure>
           <p class="eyebrow">U.S. job market · November 2026</p>
           <h2>October was a stronger month for jobs</h2>
           <p class="section-lede">U.S. employers added <strong>165,000</strong> jobs to their payrolls in October, well above the monthly average of <strong>48,000</strong> over the previous year. The unemployment rate was little changed at <strong>4.1%</strong>.</p>
@@ -322,7 +325,6 @@
             <button class="button" type="submit">Submit</button>
           </form>
         </section>
-      </div>
     </div>
   </main>
 

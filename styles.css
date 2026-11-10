@@ -182,6 +182,60 @@ img, svg {
   gap: 1.5rem;
 }
 
+.hero-photo,
+.section-photo,
+.portrait,
+.wide-photo {
+  margin: 0;
+}
+
+.hero-photo img,
+.section-photo img,
+.portrait img,
+.wide-photo img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+.hero-photo img {
+  height: 12rem;
+  object-position: 50% 30%;
+}
+
+.section-photo img {
+  aspect-ratio: 4 / 3;
+  object-position: 50% 30%;
+}
+
+.portrait img {
+  aspect-ratio: 3 / 4;
+  object-position: 50% 20%;
+  max-height: 34rem;
+}
+
+.wide-photo {
+  margin-bottom: 1.4rem;
+}
+
+.wide-photo img {
+  aspect-ratio: 16 / 9;
+  max-height: 28rem;
+  object-position: 50% 60%;
+}
+
+.section-open {
+  display: grid;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.entry-split {
+  max-width: none;
+  align-items: start;
+}
+
 .eyebrow {
   margin: 0 0 0.7rem;
   font-size: 0.78rem;
@@ -713,6 +767,19 @@ textarea {
   outline-offset: 3px;
 }
 
+@media (min-width: 800px) {
+  .section-open {
+    grid-template-columns: minmax(0, 1.15fr) minmax(15rem, 0.7fr);
+    gap: 2rem;
+  }
+
+  .entry-split {
+    display: grid;
+    grid-template-columns: minmax(0, 1.25fr) minmax(13rem, 0.46fr);
+    gap: 1.25rem 1.75rem;
+  }
+}
+
 @media (min-width: 720px) {
   .rule {
     grid-template-columns: 13.5rem minmax(0, 1fr);
@@ -741,30 +808,33 @@ textarea {
   }
 
   .hero-grid {
-    grid-template-columns: minmax(0, 1.15fr) minmax(18.5rem, 0.85fr);
+    grid-template-columns: minmax(0, 1.15fr) minmax(20rem, 0.85fr);
     grid-template-areas:
-      "copy checks"
-      "actions checks";
-    column-gap: 3.5rem;
-    row-gap: 1.5rem;
-    align-items: start;
+      "photo copy"
+      "photo checks"
+      "photo actions";
+    column-gap: 2.75rem;
+    row-gap: 1.15rem;
+    align-items: stretch;
   }
 
+  .hero-photo { grid-area: photo; }
+  .hero-photo img {
+    height: 100%;
+    min-height: 32rem;
+  }
   .hero-copy { grid-area: copy; }
   .check-panel { grid-area: checks; }
   .hero-actions { grid-area: actions; align-self: end; }
 
-  .layout {
-    grid-template-columns: 15.5rem minmax(0, 1fr);
-    gap: 3.25rem;
-    align-items: start;
+  .section-open {
+    grid-template-columns: minmax(0, 1.15fr) minmax(16rem, 0.72fr);
+    gap: 2.25rem;
   }
 
-  .rail {
-    display: block;
-    position: sticky;
-    top: 6rem;
-    padding-top: 3.6rem;
+  .entry-split {
+    grid-template-columns: minmax(0, 1.25fr) minmax(14rem, 0.48fr);
+    gap: 1.5rem 2rem;
   }
 
   .section {
