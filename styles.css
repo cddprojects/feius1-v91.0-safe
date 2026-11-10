@@ -820,18 +820,25 @@ textarea {
 }
 
 .to-top {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
   margin-left: auto;
-  padding: 0.7rem 1.2rem;
-  border-radius: 999px;
-  box-shadow: inset 0 0 0 1.5px rgba(246, 242, 230, 0.4);
-  color: var(--cream);
+  color: var(--sun);
   font-weight: 700;
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 0.3em;
   white-space: nowrap;
 }
 
-.to-top:hover {
-  background: rgba(246, 242, 230, 0.12);
+.to-top-icon {
+  flex: none;
+  transition: transform 0.15s ease;
+}
+
+.to-top:hover .to-top-icon {
+  transform: translateY(-3px);
 }
 
 :focus-visible {
@@ -1003,7 +1010,8 @@ textarea {
     scroll-behavior: auto;
   }
 
-  .button {
+  .button,
+  .to-top-icon {
     transition: none;
   }
 }
