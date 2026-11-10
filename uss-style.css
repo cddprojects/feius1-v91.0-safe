@@ -187,6 +187,18 @@ img, svg {
   font-weight: 700;
 }
 
+.site-nav a.nav-cta.nav-cta-outline,
+.site-nav a.nav-cta.nav-cta-outline:hover {
+  margin-left: 0.6rem;
+  background: transparent;
+  color: var(--forest-deep);
+  box-shadow: inset 0 0 0 1.5px var(--forest);
+}
+
+.site-nav a.nav-cta.nav-cta-outline:hover {
+  background: var(--sage);
+}
+
 .site-nav a.nav-cta:hover,
 .site-nav a.nav-cta[aria-current="true"] {
   background: var(--forest-ink);
