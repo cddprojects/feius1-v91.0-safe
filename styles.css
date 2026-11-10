@@ -724,31 +724,41 @@ h1 {
 }
 
 .meaning li {
-  position: relative;
   margin: 0;
-  padding: 1.05rem 0 1.05rem 2.8rem;
+  padding: 1.15rem 0 0.15rem;
   border-top: 1px solid var(--line);
   max-width: none;
 }
 
+.meaning li:first-child {
+  border-top: none;
+  padding-top: 0.15rem;
+}
+
 .meaning li:last-child {
-  border-bottom: 1px solid var(--line);
+  border-bottom: none;
 }
 
 .meaning li::before {
   counter-increment: point;
   content: counter(point, decimal-leading-zero);
-  position: absolute;
-  left: 0;
-  top: 1.15rem;
+  display: block;
+  margin-bottom: 0.2rem;
   font-family: Fraunces, Georgia, serif;
-  font-size: 1rem;
-  letter-spacing: 0.04em;
+  font-size: 0.95rem;
+  letter-spacing: 0.06em;
   color: var(--brass);
 }
 
 .meaning li strong {
-  font-weight: 700;
+  display: block;
+  margin-bottom: 0.3rem;
+  font-family: Fraunces, Georgia, serif;
+  font-size: 1.28rem;
+  font-weight: 560;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  color: var(--forest-deep);
 }
 
 .local {
@@ -978,28 +988,8 @@ textarea {
     object-position: 46% 34%;
   }
 
-  .market-notes {
-    display: grid;
-    grid-template-columns: 12.5rem minmax(0, 1fr);
-    column-gap: 1.75rem;
-    align-items: start;
-  }
-
   .market-notes > h3 {
-    margin: 0.15rem 0 0;
-  }
-
-  .market-notes > .meaning,
-  .market-notes > .source-link {
-    grid-column: 2;
-  }
-
-  .market-notes > .meaning {
-    margin-top: 0;
-  }
-
-  .market-notes > .source-link {
-    margin-top: 0.85rem;
+    margin-bottom: 0.85rem;
   }
 }
 
