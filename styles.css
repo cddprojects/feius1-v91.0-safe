@@ -225,15 +225,50 @@ img, svg {
   object-position: 50% 60%;
 }
 
-.section-open {
+.check-grid {
   display: grid;
-  gap: 1.25rem;
-  align-items: center;
+  gap: 1rem;
+  margin-top: 0.4rem;
 }
 
-.entry-split {
+.check-grid .entry {
   max-width: none;
-  align-items: start;
+  margin: 0;
+  padding: 1.15rem 1.15rem 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--paper-2);
+}
+
+.check-grid .entry:first-of-type {
+  margin-top: 0;
+}
+
+.check-grid .entry p,
+.check-grid .resources {
+  max-width: none;
+}
+
+.card-photo {
+  margin: -1.15rem -1.15rem 1rem;
+}
+
+.card-photo img {
+  width: 100%;
+  height: 13rem;
+  object-fit: cover;
+  object-position: 50% 18%;
+  border-radius: 16px 16px 0 0;
+}
+
+.checklist-photo {
+  margin-top: 0.2rem;
+}
+
+.checklist-photo img {
+  aspect-ratio: 16 / 8;
+  max-height: 24rem;
+  object-position: 50% 28%;
 }
 
 .eyebrow {
@@ -768,15 +803,10 @@ textarea {
 }
 
 @media (min-width: 800px) {
-  .section-open {
-    grid-template-columns: minmax(0, 1.15fr) minmax(15rem, 0.7fr);
-    gap: 2rem;
-  }
-
-  .entry-split {
-    display: grid;
-    grid-template-columns: minmax(0, 1.25fr) minmax(13rem, 0.46fr);
-    gap: 1.25rem 1.75rem;
+  .check-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem 1.35rem;
+    align-items: start;
   }
 }
 
@@ -826,16 +856,6 @@ textarea {
   .hero-copy { grid-area: copy; }
   .check-panel { grid-area: checks; }
   .hero-actions { grid-area: actions; align-self: end; }
-
-  .section-open {
-    grid-template-columns: minmax(0, 1.15fr) minmax(16rem, 0.72fr);
-    gap: 2.25rem;
-  }
-
-  .entry-split {
-    grid-template-columns: minmax(0, 1.25fr) minmax(14rem, 0.48fr);
-    gap: 1.5rem 2rem;
-  }
 
   .section {
     padding-top: 4.4rem;
