@@ -583,20 +583,29 @@ h1 {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  padding: 0.72rem 0;
-  border-bottom: 1px solid var(--line);
+  padding: 0.55rem 0;
+  border-bottom: none;
   font-weight: 650;
+  text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 0.18em;
   line-height: 1.35;
 }
 
+.resources a[target="_blank"] {
+  position: relative;
+  padding-right: 1.4rem;
+}
+
 .resources a[target="_blank"]::after {
   content: "↗";
-  flex: none;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
   color: var(--faint);
-  text-decoration: none;
   font-weight: 500;
+  text-decoration: none;
 }
 
 #market {
