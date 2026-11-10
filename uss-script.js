@@ -6,9 +6,8 @@
     form.addEventListener("submit", function (event) {
       event.preventDefault();
       if (!form.reportValidity()) return;
-      status.textContent = "Thanks. We got your note.";
       form.reset();
-      status.focus();
+      window.location.href = "thank-you/";
     });
   }
 
