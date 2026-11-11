@@ -1583,3 +1583,18 @@ body {
 .doc-policy h1 {
   max-width: none;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.site-footer {
+  flex: none;
+}
