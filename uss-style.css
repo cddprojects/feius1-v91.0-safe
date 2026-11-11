@@ -1568,3 +1568,18 @@ body {
   margin-bottom: 0.25rem;
   break-inside: avoid;
 }
+
+.doc-policy {
+  max-width: none;
+  margin-inline: 0;
+}
+
+.doc-policy .lede,
+.doc-policy p,
+.doc-policy li {
+  max-width: none;
+}
+
+.doc-policy h1 {
+  max-width: none;
+}
