@@ -24,7 +24,7 @@
 
   var sections = document.querySelectorAll("[data-section]");
   var headerLinks = document.querySelectorAll(".site-nav a[data-nav]");
-  var railLinks = document.querySelectorAll(".rail a[data-section-link]");
+  var railLinks = document.querySelectorAll("a[data-section-link]");
 
   if (!sections.length || !("IntersectionObserver" in window)) return;
 
