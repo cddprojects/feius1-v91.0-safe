@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Nimble Discover logo">
-  <rect width="32" height="32" rx="8" fill="#1c4636"/>
-  <circle cx="16" cy="16" r="9" fill="none" stroke="#f4e7c4" stroke-width="1.45"/>
-  <path d="M16 6.6 18.55 15.05 16 13.35 13.45 15.05Z" fill="#f6f2e6"/>
-  <path d="M16 25.4 13.45 16.95 16 18.65 18.55 16.95Z" fill="#f2d98d"/>
-  <circle cx="16" cy="16" r="1.35" fill="#f4e7c4"/>
+  <rect width="32" height="32" rx="8" fill="#1b2a4a"/>
+  <circle cx="16" cy="16" r="9" fill="none" stroke="#f4efe6" stroke-width="1.45"/>
+  <path d="M16 6.6 18.55 15.05 16 13.35 13.45 15.05Z" fill="#f6f3ee"/>
+  <path d="M16 25.4 13.45 16.95 16 18.65 18.55 16.95Z" fill="#e7a07a"/>
+  <circle cx="16" cy="16" r="1.35" fill="#f4efe6"/>
 </svg>

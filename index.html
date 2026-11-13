@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Before you hit Apply — Nimble Discover Job Search Guide</title>
-  <meta name="description" content="Found a job you like? Take a minute to make sure the listing is real and the pay, hours, and location work for you.">
-  <meta name="theme-color" content="#1c4636">
+  <title>Look closer before you apply — Nimble Discover Job Search Guide</title>
+  <meta name="description" content="Found a job you like? Take a minute to confirm the opening is real and that the pay, hours, and location work for you.">
+  <meta name="theme-color" content="#1b2a4a">
   <link rel="canonical" href="https://nimblediscover.com/">
   <meta property="og:url" content="https://nimblediscover.com/">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="uss-style.css">
 </head>
 <body>
@@ -22,11 +22,11 @@
     <div class="wrap header-inner">
       <a class="brand" href="#top">
         <svg class="mark" viewBox="0 0 32 32" aria-hidden="true">
-          <rect width="32" height="32" rx="8" fill="#1c4636"/>
-          <circle cx="16" cy="16" r="9" fill="none" stroke="#f4e7c4" stroke-width="1.45"/>
-          <path d="M16 6.6 18.55 15.05 16 13.35 13.45 15.05Z" fill="#f6f2e6"/>
-          <path d="M16 25.4 13.45 16.95 16 18.65 18.55 16.95Z" fill="#f2d98d"/>
-          <circle cx="16" cy="16" r="1.35" fill="#f4e7c4"/>
+          <rect width="32" height="32" rx="8" fill="#1b2a4a"/>
+          <circle cx="16" cy="16" r="9" fill="none" stroke="#f4efe6" stroke-width="1.45"/>
+          <path d="M16 6.6 18.55 15.05 16 13.35 13.45 15.05Z" fill="#f6f3ee"/>
+          <path d="M16 25.4 13.45 16.95 16 18.65 18.55 16.95Z" fill="#e7a07a"/>
+          <circle cx="16" cy="16" r="1.35" fill="#f4efe6"/>
         </svg>
         <span class="brand-text">
           <span class="brand-name">Nimble Discover</span>
@@ -34,7 +34,7 @@
         </span>
       </a>
       <nav class="site-nav" aria-label="Page">
-        <a href="#checklist">Checklist</a>
+        <a href="#checklist" data-nav="checklist">Checklist</a>
         <a href="#market" data-nav="market">Job market</a>
         <a href="#updates" data-nav="updates">U.S. updates</a>
         <a class="nav-cta" href="#feedback" data-nav="feedback">Contact us</a>
@@ -46,12 +46,12 @@
     <div class="page">
       <section class="hero" aria-labelledby="page-title">
         <div class="hero-copy">
-          <p class="chip">Job hunting in the U.S.</p>
-          <h1 id="page-title">Before you hit <em>Apply</em></h1>
-          <p class="lede">Found a job you like? Take a minute to make sure the work opportunity is real and the pay, hours, and location work for you.</p>
+          <p class="chip">For job seekers in the U.S.</p>
+          <h1 id="page-title">Look closer <em>before</em> you apply</h1>
+          <p class="lede">Found a job you like? Take a minute to confirm the opening is real and that the pay, hours, and location work for you.</p>
           <p class="hero-actions">
-            <a class="button" href="#checklist">Get the checklist</a>
-            <a class="button button-ghost" href="#market">See where jobs are growing</a>
+            <a class="button" href="#checklist">Start with the checklist</a>
+            <a class="button button-ghost" href="#market">See where jobs were added</a>
           </p>
           <p class="checked-on">Sources checked November 10, 2026</p>
         </div>
@@ -63,87 +63,93 @@
       <nav class="quick" aria-label="Four things to check">
         <p class="quick-label">Four things to check</p>
         <ol class="quick-list">
-          <li><a href="#posting" data-section-link="posting"><span class="num">01</span><span>Is this job posting real?</span></a></li>
-          <li><a href="#pay" data-section-link="pay"><span class="num">02</span><span>What does it pay?</span></a></li>
-          <li><a href="#hours" data-section-link="hours"><span class="num">03</span><span>What hours would I work?</span></a></li>
-          <li><a href="#location" data-section-link="location"><span class="num">04</span><span>Where would I work?</span></a></li>
+          <li><a href="#posting" data-section-link="posting"><span class="num">01</span><span>Is the posting genuine?</span></a></li>
+          <li><a href="#pay" data-section-link="pay"><span class="num">02</span><span>What would this job pay?</span></a></li>
+          <li><a href="#hours" data-section-link="hours"><span class="num">03</span><span>Which hours would you work?</span></a></li>
+          <li><a href="#location" data-section-link="location"><span class="num">04</span><span>Where would the work happen?</span></a></li>
         </ol>
       </nav>
 
       <div class="sheet-main">
         <section class="section" id="checklist" data-section="checklist">
           <p class="chip">The checklist</p>
-          <h2>Give the posting a closer look</h2>
-          <p class="section-lede">Keep the listing open as you go. If something’s missing, here’s what to ask.</p>
-          <div class="check-grid">
-            <figure class="check-photo">
-              <img src="images/calm-laptop-nook.jpg" width="1280" height="720" alt="An open laptop, a mug, and a notebook on a wooden table beside a sunny window.">
-            </figure>
+          <h2>Read the posting with these four questions</h2>
+          <p class="section-lede">Keep the ad open beside you. When a detail is missing, the line under each step is what to ask.</p>
+          <figure class="check-photo">
+            <img src="images/calm-laptop-nook.jpg" width="1280" height="720" alt="An open laptop, a mug, and a notebook on a wooden table beside a sunny window.">
+          </figure>
 
-          <article class="entry card" id="posting" data-section="posting">
+          <article class="entry" id="posting" data-section="posting">
             <p class="step"><span>01</span> The posting</p>
-            <h3>Is this job posting real?</h3>
-            <p>Go to the company’s careers page and look for the same job title, location, and job ID if there is one. If you don’t see the opening, contact the company using the number or email on its website.</p>
-            <p>If someone asks you to pay to get hired, or sends a check and asks you to send some of the money back, walk away.</p>
-            <blockquote class="ask">
-              <p class="ask-label">What to ask</p>
-              <p>“Is this job still open? Where should I apply?”</p>
-            </blockquote>
-            <ul class="resources">
-              <li><a href="https://consumer.ftc.gov/consumer-alerts/2018/09/anatomy-fake-check-scam" target="_blank" rel="noopener noreferrer">How to spot a job scam (FTC)<span class="visually-hidden"> (opens in a new tab)</span></a></li>
-              <li><a href="https://www.usa.gov/job-search" target="_blank" rel="noopener noreferrer">Where to look for jobs (USAGov)<span class="visually-hidden"> (opens in a new tab)</span></a></li>
-            </ul>
+            <div class="entry-copy">
+              <h3>Is the posting genuine?</h3>
+              <p>Open the employer’s own careers page and look for the same title, the same location, and the job ID when the ad includes one. If the opening is not there, reach the company through the phone number or email published on its website.</p>
+              <p>Leave if anyone asks you to pay in order to be hired, or sends a check and tells you to return part of the money.</p>
+              <blockquote class="ask">
+                <p class="ask-label">What to ask</p>
+                <p>“Is this job still open? Where should I apply?”</p>
+              </blockquote>
+              <ul class="resources">
+                <li><a href="https://consumer.ftc.gov/consumer-alerts/2018/09/anatomy-fake-check-scam" target="_blank" rel="noopener noreferrer">How to spot a job scam (FTC)<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+                <li><a href="https://www.usa.gov/job-search" target="_blank" rel="noopener noreferrer">Where to look for jobs (USAGov)<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+              </ul>
+            </div>
           </article>
 
-          <article class="entry card" id="pay" data-section="pay">
+          <article class="entry" id="pay" data-section="pay">
             <p class="step"><span>02</span> The pay</p>
-            <h3>What does it pay?</h3>
-            <p>Look for an hourly rate, a salary range, or a flat fee for the project. If the ad says “up to $25 an hour,” ask how much is base pay and how much depends on tips, commissions, or bonuses.</p>
-            <p>If there’s no pay range, your state labor office can help you find out which employers have to list one.</p>
-            <blockquote class="ask">
-              <p class="ask-label">What to ask</p>
-              <p>“What’s the starting pay for this job at this location?”</p>
-            </blockquote>
-            <ul class="resources">
-              <li><a href="https://www.dol.gov/agencies/whd/state/contacts" target="_blank" rel="noopener noreferrer">Find your state labor office<span class="visually-hidden"> (opens in a new tab)</span></a></li>
-              <li><a href="https://dol.ny.gov/pay-transparency" target="_blank" rel="noopener noreferrer">New York’s pay disclosure rules<span class="visually-hidden"> (opens in a new tab)</span></a></li>
-            </ul>
+            <div class="entry-copy">
+              <h3>What would this job pay?</h3>
+              <p>Find an hourly rate, a salary range, or a flat fee if the work is a project. When an ad says “up to $25 an hour,” ask which part is base pay and which part depends on tips, commissions, or bonuses.</p>
+              <p>When the ad lists no range, your state labor office can tell you which employers are required to show one.</p>
+              <blockquote class="ask">
+                <p class="ask-label">What to ask</p>
+                <p>“What’s the starting pay for this job at this location?”</p>
+              </blockquote>
+              <ul class="resources">
+                <li><a href="https://www.dol.gov/agencies/whd/state/contacts" target="_blank" rel="noopener noreferrer">Find your state labor office<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+                <li><a href="https://dol.ny.gov/pay-transparency" target="_blank" rel="noopener noreferrer">New York’s pay disclosure rules<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+              </ul>
+            </div>
           </article>
 
-          <article class="entry card" id="hours" data-section="hours">
-            <figure class="card-photo">
-              <img src="images/shift-start.jpg" width="1024" height="768" alt="A man checks a laptop and phone at his kitchen table.">
-            </figure>
+          <article class="entry" id="hours" data-section="hours">
             <p class="step"><span>03</span> The hours</p>
-            <h3>What hours would I work?</h3>
-            <p>Get the days, shift times, and usual hours per week. “Flexible schedule” could mean flexible work you pick up, or that your manager needs you to cover different shifts each week. Check when training happens and confirm the time zone if you’ll work remotely.</p>
-            <blockquote class="ask">
-              <p class="ask-label">What to ask</p>
-              <p>“What would a typical week look like? When would I need to be available for training?”</p>
-            </blockquote>
+            <div class="entry-copy">
+              <figure class="inline-photo">
+                <img src="images/shift-start.jpg" width="1024" height="768" alt="A man checks a laptop and phone at his kitchen table.">
+              </figure>
+              <h3>Which hours would you work?</h3>
+              <p>Ask for the days, the shift times, and the usual hours in a week. The words “flexible schedule” can mean you choose when to pick up work, or that a manager needs you on different shifts from week to week. Find out when training happens, and confirm the time zone if the job is remote.</p>
+              <blockquote class="ask">
+                <p class="ask-label">What to ask</p>
+                <p>“What would a typical week look like? When would I need to be available for training?”</p>
+              </blockquote>
+            </div>
           </article>
 
-          <article class="entry card" id="location" data-section="location">
+          <article class="entry" id="location" data-section="location">
             <p class="step"><span>04</span> The location</p>
-            <h3>Where would I work?</h3>
-            <p>For on-site or hybrid jobs, get the exact address and ask how often you’ll need to go in. For remote jobs and online jobs, check whether the company hires in your state and whether you’ll need to show up in person for training or meetings.</p>
-            <blockquote class="ask">
-              <p class="ask-label">What to ask</p>
-              <p>“Can I do this job from [your state]? Is there anything I’d need to come in for?”</p>
-            </blockquote>
-            <figure class="card-photo-end">
-              <img src="images/arriving-at-work.jpg" width="1280" height="720" alt="A woman works on a laptop at her living-room table.">
-            </figure>
+            <div class="entry-copy">
+              <h3>Where would the work happen?</h3>
+              <p>For on-site and hybrid roles, get the street address and how often you would need to be there. For remote and online roles, confirm the company hires people in your state, and whether training or meetings require you to appear in person.</p>
+              <blockquote class="ask">
+                <p class="ask-label">What to ask</p>
+                <p>“Can I do this job from [your state]? Is there anything I’d need to come in for?”</p>
+              </blockquote>
+              <figure class="inline-photo inline-photo-end">
+                <img src="images/arriving-at-work.jpg" width="1280" height="720" alt="A woman works on a laptop at her living-room table.">
+              </figure>
+            </div>
           </article>
-          </div>
         </section>
 
-        <section class="section band" id="market" data-section="market">
+        <section class="section market" id="market" data-section="market">
           <div class="market-open">
             <div class="market-lead">
               <p class="chip">U.S. job market · November 2026</p>
-              <h2>October was a stronger month for jobs</h2>
-              <p class="section-lede">U.S. employers added <strong>165,000</strong> jobs to their payrolls in October, well above the monthly average of <strong>48,000</strong> over the previous year. The unemployment rate was little changed at <strong>4.1%</strong>.</p>
+              <h2>October brought a larger gain in jobs</h2>
+              <p class="section-lede">In October, U.S. employers added <strong>165,000</strong> jobs to payrolls. That is well above the average monthly gain of <strong>48,000</strong> over the prior year. Unemployment was little changed, at <strong>4.1%</strong>.</p>
               <p class="source-link"><a href="https://www.bls.gov/news.release/empsit.nr0.htm" target="_blank" rel="noopener noreferrer">October jobs report from the Bureau of Labor Statistics<span class="visually-hidden"> (opens in a new tab)</span></a></p>
             </div>
             <figure class="market-photo">
@@ -152,46 +158,46 @@
           </div>
 
           <div class="market-block gains">
-            <h3>Where employers added jobs</h3>
+            <h3>Industries that added jobs</h3>
             <p class="meta-line">Jobs added minus jobs lost in October 2026</p>
             <div class="industries">
               <article class="industry">
                 <p class="delta">+70,000</p>
                 <div>
                   <h4>Professional and business services</h4>
-                  <p>Technical services and administrative support both added jobs. If you’re looking for office work, try “administrative assistant” or “operations assistant.”</p>
+                  <p>Both technical services and administrative support gained jobs. For office roles, search titles such as administrative assistant and operations assistant.</p>
                 </div>
               </article>
               <article class="industry">
                 <p class="delta">+42,000</p>
                 <div>
                   <h4>Health care</h4>
-                  <p>Hospitals, home health agencies, and outpatient centers added jobs. Check their careers pages for patient scheduler, front desk, or home health aide openings that match your qualifications.</p>
+                  <p>Hospitals, home health agencies, and outpatient centers added jobs. On their careers pages, look for patient scheduler, front desk, and home health aide roles that match what you are qualified to do.</p>
                 </div>
               </article>
               <article class="industry">
                 <p class="delta">+25,000</p>
                 <div>
                   <h4>Transportation and warehousing</h4>
-                  <p>Courier services accounted for most of the increase. If you need shift work, search for “courier” or “package handler” near you and check the hours.</p>
+                  <p>Most of that gain came from courier services. If you want shift work, search “courier” or “package handler” near you, then check the hours.</p>
                 </div>
               </article>
             </div>
           </div>
 
           <div class="market-block market-notes">
-            <h3>What this means for your search</h3>
+            <h3>How to use these numbers</h3>
             <ul class="meaning">
-              <li><strong>Hotels and restaurants are still worth a look.</strong> Leisure and hospitality employment barely moved in October. In September, hotels and food service businesses brought on more people and saw more people leave. Check local employers for openings even when the industry’s job count is flat.</li>
-              <li><strong>Look at openings and hires together.</strong> Employers had 7.5 million jobs open at the end of September and hired 5.4 million people during the month. Both figures changed little from August. For openings you can apply to today, check company careers pages in your area.</li>
-              <li><strong>Ask how many hours you can count on.</strong> In October, 4.8 million people were working part time because their hours had been cut or they couldn’t find full-time work. That was up 339,000 from September. If you need a steady paycheck, ask whether the employer guarantees a minimum number of hours.</li>
+              <li><strong>Hotels and restaurants are still worth checking.</strong> Leisure and hospitality employment barely changed in October. In September, hotels and food-service businesses both hired more people and had more people leave. Look at local employers even when the industry’s overall job count is flat.</li>
+              <li><strong>Read openings and hires side by side.</strong> At the end of September, employers had 7.5 million jobs open and hired 5.4 million people during that month. Both counts changed little from August. To see roles you can apply for now, use company careers pages in your area.</li>
+              <li><strong>Ask which hours are dependable.</strong> In October, 4.8 million people were working part time because their hours were reduced or they could not find full-time work. That figure rose by 339,000 from September. If you need steady pay, ask whether the employer guarantees a minimum number of hours.</li>
             </ul>
             <p class="source-link"><a href="https://www.bls.gov/news.release/jolts.nr0.htm" target="_blank" rel="noopener noreferrer">September openings and hires report (BLS)<span class="visually-hidden"> (opens in a new tab)</span></a></p>
           </div>
 
           <div class="local">
-            <h3>Take the search local</h3>
-            <p>Pick a job title and search for it with your city or ZIP code. If you’re working around another job and want a second income, add “part time,” “remote,” “evenings,” or “weekends.” Use the checklist on any listing that looks promising.</p>
+            <h3>Search near you</h3>
+            <p>Choose a job title and pair it with your city or ZIP code. If you already have a job and want a second income, add “part time,” “remote,” “evenings,” or “weekends.” Run the checklist on any listing that looks worth a closer look.</p>
             <ul class="resources">
               <li><a href="https://www.bls.gov/sae/" target="_blank" rel="noopener noreferrer">See job trends by state and metro area<span class="visually-hidden"> (opens in a new tab)</span></a></li>
               <li><a href="https://www.usa.gov/job-search" target="_blank" rel="noopener noreferrer">Find job boards through USAGov<span class="visually-hidden"> (opens in a new tab)</span></a></li>
@@ -203,17 +209,17 @@
 
         <section class="section" id="updates" data-section="updates">
           <p class="chip">U.S. job search updates</p>
-          <h2>New rules and scam alerts</h2>
-          <p class="section-lede">Check the date and the place on each note below before you compare a job posting or an offer.</p>
+          <h2>Rules and scam notes to check</h2>
+          <p class="section-lede">Read the date and the place on each note before you compare a posting or an offer.</p>
 
-          <article class="rule card">
+          <article class="rule">
             <div class="rule-meta">
               <p class="place">California and Washington</p>
               <p class="when">Starts January 1, 2027</p>
             </div>
             <div class="rule-body">
-              <h3>Minimum wage goes up in January</h3>
-              <p>Starting January 1, the statewide minimum wage is set to rise to $17.40 an hour in California and $17.73 an hour in Washington. If you’re comparing offers for 2027, check the rate where you’ll work. Some cities and counties set a higher minimum.</p>
+              <h3>Minimum wage rises in January</h3>
+              <p>Starting January 1, the statewide minimum wage is set to rise to $17.40 an hour in California and $17.73 an hour in Washington. If you are comparing offers for 2027, check the rate where you would work. Some cities and counties set a higher minimum.</p>
               <ul class="resources">
                 <li><a href="https://www.dir.ca.gov/dlse/faq_minimumwage.htm" target="_blank" rel="noopener noreferrer">California labor department announcement<span class="visually-hidden"> (opens in a new tab)</span></a></li>
                 <li><a href="https://www.lni.wa.gov/workers-rights/wages/minimum-wage/" target="_blank" rel="noopener noreferrer">Washington labor department announcement<span class="visually-hidden"> (opens in a new tab)</span></a></li>
@@ -221,14 +227,14 @@
             </div>
           </article>
 
-          <article class="rule card">
+          <article class="rule">
             <div class="rule-meta">
               <p class="place">Maine and Virginia</p>
               <p class="when">In effect since July 2026</p>
             </div>
             <div class="rule-body">
-              <h3>More job ads have to show what they pay</h3>
-              <p>Since July 29, Maine employers with 10 or more employees have had to list the expected pay range in covered job ads or say when a job pays commission only. Since July 1, Virginia employers have had to list the wage, salary, or pay range in covered job ads. They also can’t ask applicants about past pay.</p>
+              <h3>More job ads have to show the pay</h3>
+              <p>Since July 29, 2026, Maine employers with 10 or more employees have had to list the expected pay range in covered job ads, or say when a job pays commission only. Since July 1, 2026, Virginia employers have had to list the wage, salary, or pay range in covered job ads. They also cannot ask applicants about past pay.</p>
               <p>If the ad is vague, ask what pay range the company has in mind.</p>
               <ul class="resources">
                 <li><a href="https://www.maine.gov/labor/news_events/article.shtml?id=13356290" target="_blank" rel="noopener noreferrer">Maine Department of Labor update<span class="visually-hidden"> (opens in a new tab)</span></a></li>
@@ -237,14 +243,14 @@
             </div>
           </article>
 
-          <article class="rule card">
+          <article class="rule">
             <div class="rule-meta">
               <p class="place">Chicago, Illinois</p>
               <p class="when">In effect since July 1, 2026</p>
             </div>
             <div class="rule-body">
               <h3>More Chicago workers may qualify for advance notice of shifts</h3>
-              <p>Chicago’s Fair Workweek rules can apply to workers making up to $33.85 an hour or $64,945.55 a year. Coverage also depends on the industry and employer. If you’re applying for shift work in Chicago, ask if the job is covered and when you’ll get your schedule.</p>
+              <p>Chicago’s Fair Workweek rules can apply to workers making up to $33.85 an hour or $64,945.55 a year. Coverage also depends on the industry and the employer. If you are applying for shift work in Chicago, ask whether the job is covered and when you will get your schedule.</p>
               <ul class="resources">
                 <li><a href="https://www.chicago.gov/city/en/depts/bacp/supp_info/fairworkweek.html" target="_blank" rel="noopener noreferrer">Chicago Fair Workweek coverage<span class="visually-hidden"> (opens in a new tab)</span></a></li>
                 <li><a href="https://www.chicago.gov/content/dam/city/depts/bacp/OSL/2026_FWW%20Notice_English_v2.pdf" target="_blank" rel="noopener noreferrer">Chicago’s July 2026 labor updates<span class="visually-hidden"> (opens in a new tab)</span></a></li>
@@ -252,14 +258,14 @@
             </div>
           </article>
 
-          <article class="rule card">
+          <article class="rule">
             <div class="rule-meta">
               <p class="place">Nationwide</p>
               <p class="when">FTC alert · April 2026</p>
             </div>
             <div class="rule-body">
               <h3>Watch for texts about remote jobs you never applied for</h3>
-              <p>The FTC flagged messages that pitch a vague remote job and ask you to text back “YES” or “INTERESTED.” Skip the reply. If you want to see whether the opening is real, go straight to the company’s careers page or call the number on its website.</p>
+              <p>The FTC flagged messages that pitch a vague remote job and ask you to text back “YES” or “INTERESTED.” Do not reply. If you want to see whether the opening is real, go straight to the company’s careers page or call the number on its website.</p>
               <ul class="resources">
                 <li><a href="https://reportfraud.ftc.gov/" target="_blank" rel="noopener noreferrer">FTC fake recruiter alert<span class="visually-hidden"> (opens in a new tab)</span></a></li>
               </ul>
@@ -272,8 +278,8 @@
         <section class="section feedback" id="feedback" data-section="feedback">
           <div class="feedback-copy">
             <p class="chip">From our readers</p>
-            <h2>What should we cover next?</h2>
-            <p class="section-lede">Have a job search question or a topic you’d like us to cover? Tell us what you’d like to see.</p>
+            <h2>What should the next guide cover?</h2>
+            <p class="section-lede">Send a job-search question, or name a topic you want explained. We read notes like yours when we choose what to write next.</p>
           </div>
           <form class="note-form" id="note-form" action="#feedback" method="post">
             <p id="form-status" class="form-status" role="status" tabindex="-1"></p>
@@ -281,12 +287,12 @@
               <label for="topic">What’s on your mind?</label>
               <select id="topic" name="topic">
                 <option value="" selected>Suggest a topic</option>
-                <option>Is this job posting real?</option>
-                <option>What does it pay?</option>
-                <option>What hours would I work?</option>
-                <option>Where would I work?</option>
+                <option>Is the posting genuine?</option>
+                <option>What would this job pay?</option>
+                <option>Which hours would you work?</option>
+                <option>Where would the work happen?</option>
                 <option>Job market</option>
-                <option>New rules and scam alerts</option>
+                <option>Rules and scam notes</option>
               </select>
             </div>
             <div class="field">
